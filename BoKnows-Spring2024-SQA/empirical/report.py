@@ -2,6 +2,7 @@
 Farzana Ahamed Bhuiyan 
 Dec 3, 2020
 Report Frequency: RQ2
+Simple Change -
 '''
 import numpy as np 
 import os 
