@@ -134,6 +134,7 @@ def getCSVData(dic_, dir_repo):
 
 		temp_list.append( the_tup )
 		# print('='*25)
+		LogObject.info(f'CSV List input: {temp_list}')
 	return temp_list
   
   
@@ -146,6 +147,7 @@ def getAllPythonFilesinRepo(path2dir):
 				if (file_.endswith( constants.PY_FILE_EXTENSION ) and (py_parser.checkIfParsablePython( full_path_file ) )   ):
 					valid_list.append(full_path_file) 
 	valid_list = np.unique(  valid_list )
+	LogObject.info(f'Python Files List: {valid_list}')
 	return valid_list
 
 
@@ -162,6 +164,7 @@ def runFameML(inp_dir, csv_fil):
 		print(constants.ANALYZING_KW, subfolder)
 		print('-'*50)
 	full_df = pd.DataFrame( df_list ) 
+	LogObject.info(f'Check dataframe before write {full_df}')
 	# print(full_df.head())
 	full_df.to_csv(csv_fil, header= constants.CSV_HEADER, index=False, encoding= constants.UTF_ENCODING)     
 	return output_event_dict
@@ -169,7 +172,7 @@ def runFameML(inp_dir, csv_fil):
 
 if __name__=='__main__':
 	command_line_flag = False ## after acceptance   
-
+	LogObject = myLogger.giveMeLoggingObject()
 	t1 = time.time()
 	print('Started at:', giveTimeStamp() )
 	print('*'*100 )
