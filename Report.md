@@ -11,13 +11,13 @@
 
 ## 4.b. Create a fuzz.py file that will automatically fuzz 5 Python methods of your choice. Report any bugs you discovered by the fuzz.py file. fuzz.py will be automatically executed from GitHub actions. (20%)
 <br>
-    1. The hardest part of this was choosing which five methods to fuzz. 
-    fuzz.py fuzzes the following methods: 
-        1. empirical/report/median
-        2. empirical/report/average
-        3. empirical/report/reportProp
-        4. empirical/frequency/reportProportion
-        5. empirical/frequency/reportEventDensity
+    -1. The hardest part of this was choosing which five methods to fuzz. 
+        -fuzz.py fuzzes the following methods: 
+            -1. empirical/report/median
+            -2. empirical/report/average
+            -3. empirical/report/reportProp
+            -4. empirical/frequency/reportProportion
+            -5. empirical/frequency/reportEventDensity
 <br>
     2. I started by using a previous fuzz.py file as a template and created a new try catch for each of the five methods chosen. With a list to store catches.
 <br>
