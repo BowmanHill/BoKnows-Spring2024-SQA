@@ -18,12 +18,16 @@
         3. empirical/report/reportProp
         4. empirical/frequency/reportProportion
         5. empirical/frequency/reportEventDensity
-
+<br>
     2. I started by using a previous fuzz.py file as a template and created a new try catch for each of the five methods chosen. With a list to store catches.
-
+<br>
     3. Then I created execFuzz.yaml to automatically execute fuzz.py from Github Actions. 
-    
-    4.In order for my workflow to function properly I also created a requirements.txt to be able to install all necessary dependencies for the fuzz.py file.
+<br>
+    4. In order for my workflow to function properly I also created a requirements.txt to be able to install all necessary dependencies for the fuzz.py file.
+
+    Below is the workflow being run and the fuzz.py output in github Actions.
+
+    !Workflow Output https://github.com/BowmanHill/BoKnows-Spring2024-SQA/blob/main/ProjectImages/execFuzzWorkflowOutput.png
 
 ## 4.c. Integrate forensics by modifying 5 Python methods of your choice. (20%)
 
