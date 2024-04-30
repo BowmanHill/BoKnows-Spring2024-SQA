@@ -30,3 +30,11 @@ Below is the workflow being run and the fuzz.py output in github Actions.
 ## 4.c. Integrate forensics by modifying 5 Python methods of your choice. (20%)
 
 ## 4.d. Integrate continuous integration with GitHub Actions. (20%)
+    1. I used codacity with GitHub Actions to implement continuous integration into the project.
+    2. First I created a main.yaml file in the .github/workflows directory
+    3. Then I pasted the basic codacity implementation from the previous workshop
+
+You can see one of the workflow runs at 
+https://github.com/BowmanHill/BoKnows-Spring2024-SQA/actions/runs/8898952410/job/24437203701
+
+
