@@ -28,6 +28,12 @@ Below is the workflow being run and the fuzz.py output in github Actions.
 
 
 ## 4.c. Integrate forensics by modifying 5 Python methods of your choice. (20%)
+    Logging forensics added to five methods
+        1. empirical/report/reportProp
+        2. empirical/report/reportDensity
+        3. empirical/frequency/reportProportion
+        4. empirical/frequency/reportEventDensity
+        5. mining/mining/main
 
 ## 4.d. Integrate continuous integration with GitHub Actions. (20%)
     1. I used codacity with GitHub Actions to implement continuous integration into the project.
@@ -35,6 +41,7 @@ Below is the workflow being run and the fuzz.py output in github Actions.
     3. Then I pasted the basic codacity implementation from the previous workshop
 
 You can see one of the workflow runs at 
+<br>
 https://github.com/BowmanHill/BoKnows-Spring2024-SQA/actions/runs/8898952410/job/24437203701
 
 
