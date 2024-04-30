@@ -1,5 +1,7 @@
 from empirical.report import Average, Median, reportProp
 from empirical.frequency import reportProportion
+from mining.mining import makeChunks
+
 import random
 
 
@@ -14,19 +16,20 @@ def simpleFuzzer():
     except Exception as e:
             # Record the crash message
         crash_messages.append(str(e))
-
-    try:
-        reportProportion(ls)
-    except Exception as e:
-            # Record the crash message
-        crash_messages.append(str(e))
-
+        
     try:
         Median(ls)
     except Exception as e:
             # Record the crash message
         crash_messages.append(str(e))
         
+    try:
+        modls = ls + str( random.randint(1,10))
+        makeChunks(ls, modls)
+    except Exception as e:
+            # Record the crash message
+        crash_messages.append(str(e))
+                
     try:
         reportProp(ls)
     except Exception as e:

@@ -8,7 +8,7 @@ import subprocess
 import shutil
 from git import Repo
 from git import exc 
-
+import myLogger
 
 def giveTimeStamp():
   tsObj = time.time()
@@ -192,6 +192,11 @@ def cloneRepos(repo_list, dev_threshold=3, python_threshold=0.10, commit_thresho
 
 if __name__=='__main__':
     repos_df = pd.read_csv('PARTIAL_REMAINING_GITHUB.csv', sep='delimiter')
+    '''
+    Inserted logging statement because data can be poisoned. 
+    '''
+    myLogger.info('Generic information: getting results: %s', str(repos_df)) 
+
     print(repos_df.head())
     list_    = repos_df['url'].tolist()
     list_ = np.unique(list_)

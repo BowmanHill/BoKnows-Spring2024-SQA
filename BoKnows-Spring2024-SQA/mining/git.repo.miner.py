@@ -17,6 +17,7 @@ from xml.parsers.expat import ExpatError
 import time 
 import  datetime 
 import os 
+import myLogger
 
 def deleteRepo(dirName, type_):
     print(':::' + type_ + ':::Deleting ', dirName)
@@ -116,6 +117,12 @@ def getMLLibraryUsage(path2dir):
 
 def deleteRepos():
     repos_df = pd.read_csv('DELETE_CANDIDATES_GITHUB_V2.csv')
+    '''
+    Inserted logging statement because data can be poisoned. 
+    '''
+    myLogger.info('Generic information: getting results: %s', str(repos_df)) 
+
+    
     repos    = np.unique( repos_df['REPO'].tolist() ) 
     for x_ in repos:
         deleteRepo( x_, 'ML_LIBRARY_THRESHOLD' )
