@@ -25,9 +25,10 @@
 <br>
     4. In order for my workflow to function properly I also created a requirements.txt to be able to install all necessary dependencies for the fuzz.py file.
 
-    Below is the workflow being run and the fuzz.py output in github Actions.
+Below is the workflow being run and the fuzz.py output in github Actions.
 
-    ![alt text](https://github.com/BowmanHill/BoKnows-Spring2024-SQA/blob/main/ProjectImages/execFuzzWorkflowOutput.png)
+![alt text](https://github.com/BowmanHill/BoKnows-Spring2024-SQA/blob/main/ProjectImages/execFuzzWorkflowOutput.png)
+
 
 ## 4.c. Integrate forensics by modifying 5 Python methods of your choice. (20%)
 
