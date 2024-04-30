@@ -12,8 +12,8 @@
     3. Then I added bandit into the precommit as well as a check to ensure bandit is installed
     4. Finally a conditional statement to add to the security_report.csv this task was completed.
 <br>
-Below is an image showing the hooks output and the risks recorded in the security_report.csv
-
+Below is an image showing the hooks output and the risks recorded in the security_report.csv:
+<br>
 ![alt text](https://github.com/BowmanHill/BoKnows-Spring2024-SQA/blob/main/ProjectImages/hookOutput.png)
 
 
@@ -29,9 +29,9 @@ Below is an image showing the hooks output and the risks recorded in the securit
     2. I started by using a previous fuzz.py file as a template and created a new try catch for each of the five methods chosen. With a list to store catches.
     3. Then I created execFuzz.yaml to automatically execute fuzz.py from Github Actions. 
     4. In order for my workflow to function properly I also created a requirements.txt to be able to install all necessary dependencies for the fuzz.py file.
-
-Below is the workflow being run and the fuzz.py output in github Actions.
-
+<br>
+Below is the workflow being run and the fuzz.py output in github Actions:
+<br>
 ![alt text](https://github.com/BowmanHill/BoKnows-Spring2024-SQA/blob/main/ProjectImages/execFuzzWorkflowOutput.png)
 
 ### 4.c. Integrate forensics by modifying 5 Python methods of your choice. (20%)
