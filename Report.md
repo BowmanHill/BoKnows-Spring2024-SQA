@@ -28,7 +28,8 @@ Below is the workflow being run and the fuzz.py output in github Actions.
 
 
 ### 4.c. Integrate forensics by modifying 5 Python methods of your choice. (20%)
-    Logging forensics added to five methods
+    1. To integrate forensics I first create a simple logger file
+    3. Logging forensics were then added to five methods
         1. empirical/report/reportProp
         2. empirical/report/reportDensity
         3. empirical/frequency/reportProportion
