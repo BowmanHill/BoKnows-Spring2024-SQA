@@ -59,6 +59,8 @@ def reportProportion( res_file, output_file ):
 
 
 def reportEventDensity(res_file, output_file): 
+    myLogger = giveMeLoggingObject()
+
     res_df = pd.read_csv(res_file) 
     '''
     Inserted logging statement because data can be poisoned. 

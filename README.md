@@ -11,11 +11,11 @@ Tasks
         2. empirical/report/average
         3. empirical/report/reportProp
         4. empirical/frequency/reportProportion
-        5. mining/mining/makeChunks
+        5. empirical/frequency/reportEventDensity
     C. Logging forensics added to five methods
         1. empirical/report/reportProp
         2. empirical/report/reportDensity
         3. empirical/frequency/reportProportion
-        3. mining/git.repo.mining/deleteRepos
-        4. mining/mining/main
+        4. empirical/frequency/reportEventDensity
+        5. mining/mining/main
     D. Github actions automatically executes fuzz.py
