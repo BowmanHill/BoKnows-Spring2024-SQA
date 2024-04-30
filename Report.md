@@ -18,11 +18,8 @@
             3. empirical/report/reportProp
             4. empirical/frequency/reportProportion
             5. empirical/frequency/reportEventDensity
-    <br>
     2. I started by using a previous fuzz.py file as a template and created a new try catch for each of the five methods chosen. With a list to store catches.
-    <br>
     3. Then I created execFuzz.yaml to automatically execute fuzz.py from Github Actions. 
-    <br>
     4. In order for my workflow to function properly I also created a requirements.txt to be able to install all necessary dependencies for the fuzz.py file.
 
 Below is the workflow being run and the fuzz.py output in github Actions.
