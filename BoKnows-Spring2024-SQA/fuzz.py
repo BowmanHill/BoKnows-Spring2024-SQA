@@ -1,6 +1,4 @@
 from empirical.report import Average, Median
-from mining.mining import makeChunks
-import random
 
 # Average and Median from the report.py take a list as a parameter
 
