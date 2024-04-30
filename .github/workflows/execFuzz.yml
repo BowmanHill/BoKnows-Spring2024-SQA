@@ -19,4 +19,4 @@ jobs:
           python-version: 3.8  # Specify the Python version you need
 
       - name: Execute fuzz.py
-        run: python fuzz.py
+        run: python BoKnows-Spring2024-SQA/BoKnows-Spring2024-SQA/fuzz.py
