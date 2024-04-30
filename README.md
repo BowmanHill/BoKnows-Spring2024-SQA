@@ -6,7 +6,7 @@ Team Members: Bowman Hill, HBH0018@auburn.edu
 
 Tasks
 <br>
-    A. Git hook is in .git/hooks/pre-commit, reports go in security.py
+    A. Git hook is in .git/hooks/pre-commit, reports go in security_report.csv
 <br>   
     B. fuzz.py fuzzes 
         1. empirical/report/median
