@@ -8,7 +8,7 @@ import os
 import pandas as pd 
 import time 
 import datetime 
-import myLogger
+from myLogger import giveMeLoggingObject
 
 def giveTimeStamp():
   tsObj = time.time()
@@ -24,6 +24,7 @@ def getAllSLOC(df_param, csv_encoding='latin-1' ):
     return total_sloc
 
 def reportProportion( res_file, output_file ):
+    myLogger = giveMeLoggingObject()
     res_df = pd.read_csv( res_file )
     '''
     Inserted logging statement because data can be poisoned. 

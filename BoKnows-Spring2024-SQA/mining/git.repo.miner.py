@@ -116,6 +116,7 @@ def getMLLibraryUsage(path2dir):
 
 
 def deleteRepos():
+    myLogger = giveMeLoggingObject()
     repos_df = pd.read_csv('DELETE_CANDIDATES_GITHUB_V2.csv')
     '''
     Inserted logging statement because data can be poisoned. 
